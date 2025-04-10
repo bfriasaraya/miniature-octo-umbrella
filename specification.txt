@@ -1,0 +1,37 @@
+HTML tags I used:
+<div>
+<h1>
+<p>
+<nav>
+<ul>
+<li>
+<img>
+<a>
+<h2>
+<h3>
+<hr>
+<h4>
+<h5>
+<button>
+<script>
+<meta>
+
+CSS selectors I used:
+.essay-p
+.p-justify
+li
+#blue_s
+.verde
+#quote
+
+CSS properties I used:
+text-align
+font-size
+font-weight
+margin
+color
+background-color
+
+How I chose to use Bootstrap and Javascript:
+I used Bootstrap for containers and grids mainly, but also for aesthetic-looking buttons and header text; also, I thought the color names were easy to access and a nice touch.
+I used JavaScript to implement a "Quote of the Day" button in the footer of my page. This simply creates an alert when the button is clicked, and displays a quote selected by me.

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Other Interests</title>
+    </head>
+
+    <body>
+        <div class="p-5 bg-success text-white text-center">
+            <h1>My Other Interests</h1>
+            <p>A few branches of engineering that I like</p>
+            </div>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pokemon.html">Pokemon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="digimon.html">Digimon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="eng.html">Other Interests</a>
+                </li>
+                </ul>
+            </div>
+            </nav>
+
+            <div class = "container mt-5">
+                <div class = "row g-5">
+                <div class = "col-sm-3">
+                <h2>My Favorite Equations</h2>
+                <p>I majored in Mechatronics Engineering. I was also a professor in the same university I studied at: CETYS University in Tijuana, Mexico. During my five years as a member of the Faculty of Engineering, I had the opportunity to teach a handful of interesting subjects, all of which fuel me with passion and love for their content. In light of this, I have decided to create this page where I showcase some of my favorite equations of all time.</p>
+                </div>
+                <div class = "col-sm-9">
+                    <h2>Transfer Function of a Series RLC Circuit</h2>
+                    <p class = "p-justify">Kirchhoff's Voltage Law applied around a series RLC circuit, followed by applying the Laplace Transform and solving for the capacitor voltage gives:</p>
+                    <p style = "font-size:1.3em">
+                        \[ \frac{V_{out}(s)}{V_{in}(s)} = \frac{\frac{1}{LC}}{s^2 + \frac{R}{L}s+\frac{1}{LC}} \]
+                    </p>
+
+                    <p class = "p-justify">I like this one a lot, because it is a real-world application of two subjects: <em>Differential Equations</em> and <em>Electric Circuits</em>, both of which I've also taught in the past. It is a great way of connecting university-level mathematics to an Electrical Engineering application. Most students were pretty surprised when I pulled out this connection, and that gave me great satisfaction as a professor. :)</p>
+                    <p class = "p-justify">This is also a direct application of a <strong>General Second-Order System Transfer Function</strong>, a key concept in another subject called <em>Control Engineering</em>, which I also taught during my last year as a faculty member.<p> This general transfer function is given by:
+                        <p style = "font-size:1.3em">
+                            \[ H(s) = \frac{\omega_n^2}{s^2+2\zeta\omega_n s + \omega_n^2} \]
+                        </p>
+
+                       <p class = "p-justify"> Where \( \omega_n \) is called the <em>natural oscillation frequency</em>; this is the frequency at which the system would —in response to some input or disturbance— oscillate <em>if there were no damping</em> (for example, if we removed the resistance \(R\) from the RLC circuit when turning on the battery), or in the case of a mechanical system, if we removed the actual damper (think the suspension system of a car) when going through a bumper. This is why it has the word <em>natural</em> in its name; it's as if the system acted "by itself", with no external help (damping) to dissipate energy.</p>
+                       <p class = "p-justify"> Also, the variable \( \zeta \) is known as the <em>damping ratio</em>, which —as the name says— is a measure of how well-damped the system is (Actually, it is the ratio of two particular frequencies present in a system, but let's not get too technical on that). The response of a second-order system can be classified based on this parameter as follows:</p>
+                        <p>
+                            <ul>
+                            <li class = "sl">If \( \zeta = 0 \), the system is <em>undamped</em>.</li>
+                            <li>If \( 0 < \zeta < 1 \), the system is <em>underdamped</em>.</li>
+                            <li>If \( \zeta = 1 \), the system is <em>critically damped</em>.</li>
+                            <li>If \( \zeta > 1 \), the system is <em>overdamped</em>.</li>
+                            </ul>
+                        </p>
+                        <p class = "p-justify">By direct comparison, we can conclude that, for a series RLC circuit, the natural frequency is given by \( \omega_n = \sqrt{\frac{1}{LC}} \), and —after performing some algebra— the damping ratio is given by \( \zeta = \frac{R}{2} \sqrt{\frac{C}{L}} \).</p>
+                         <p class = "p-justify">It is worth noting that, in the case of <em>any</em> second-order system, we can know <strong id = "blue_s">its entire response to a source of constant energy</strong> (e.g. a 5V DC voltage source) using only these two important parameters. This trick is not limited to electrical/electronics engineering only, but can also be used in every other branch of physics where there exists any kind of such linear system. That is why this topic is one of my favorites! There's still <em>a lot</em> more to it than just this brief intro. It was very fun to teach it in Control Engineering these past years. :)</p>
+                         <p>More of my favorite equations later!</p>
+                </div>
+            </div>
+              </div>
+
+
+
+              <div class="mt-5 p-4 bg-dark text-white text-center">
+                <p>By Benjamin Frias</p>
+                <p>April 9, 2025</p>
+                <button type="button" class="btn btn-secondary" id="quote">Quote of the Day</button>
+              </div>
+            </body>
+            <script src = "quote.js"></script>
+            </html>
+
+
+
+
+
